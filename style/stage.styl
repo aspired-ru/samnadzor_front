@@ -1,0 +1,75 @@
+.stage
+  position relative
+  height 185px
+  
+  &:before
+    background-position center center
+    background-repeat no-repeat
+    background-color #fff
+    border 1px solid #dfdfdf
+    border-radius 50%
+    position absolute
+    top 0
+    left 50%
+    display block
+    width 85px
+    height 85px
+    margin-left -42.50px
+    content ''
+    
+  &:after
+    background #dfdfdf
+    position absolute
+    top 85px
+    left 50%
+    display block
+    width 1px
+    height 100px
+    content ''
+    
+  &__inner
+    display block
+    width calc(50% - 83.50px)
+    position absolute
+    top 28.50px
+    left 0
+    text-align right
+    
+    ^[0]:nth-child(even) &
+      text-align left
+      left auto
+      right 0
+    
+  &__heading
+    margin 10px 0
+    color #134579
+    font-size 26px
+    font-style 26px
+    font-weight 900
+    line-height 28px
+    
+  &__text
+    color #8f8f8f
+    font-size 18px
+    line-height 28px
+    
+  &:last-child
+    height 122.50px
+    
+    &:after
+      display none
+      
+  &:nth-child(1):before
+    background-image url('img/stage_registration.png')
+    
+  &:nth-child(2):before
+    background-image url('img/stage_objects.png')
+    
+  &:nth-child(3):before
+    background-image url('img/stage_tests.png')
+    
+  &:nth-child(4):before
+    background-image url('img/stage_violations.png')
+    
+  &:nth-child(5):before
+    background-image url('img/stage_checks.png')

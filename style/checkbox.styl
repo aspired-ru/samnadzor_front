@@ -1,0 +1,43 @@
+.checkbox
+  position relative
+  display block
+  overflow hidden
+  cursor pointer
+  
+  input
+    position absolute
+    left -999px
+  
+  span
+    position relative
+    display block
+    padding-left 40px
+    line-height 22px
+    color #fff
+    
+    a
+      color inherit
+      
+    &:before
+    &:after
+      position absolute
+      top 0
+      left 0
+      display block
+      width 22px
+      height 22px
+      content ''
+  
+    &:before
+      border 1px solid #d8dbdf
+      background #fff
+      
+    &:after
+      transition all .25s ease-in-out
+      background url('img/icon_checkbox.png') no-repeat center center
+      visibility hidden
+      opacity 0
+      
+  input:checked ~ span:after
+    visibility visible
+    opacity 1

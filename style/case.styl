@@ -1,0 +1,60 @@
+.case
+  text-decoration none
+  text-align center
+  display block
+  color #134579
+  
+  &__image
+  &__heading
+  &__divider
+  &__sub-heading
+  &__text
+    display block
+    width 100%
+    
+  &__image
+    background-position center center
+    background-repeat no-repeat
+    background-size contain
+    height 228px
+    
+    ^[0]--school &
+      background-image url('img/case_school.png')
+      
+    ^[0]--hospital &
+      background-image url('img/case_hospital.png')
+      
+    ^[0]--kindergarden &
+      background-image url('img/case_kindergarden.png')
+    
+    ^[0]--highschool &
+      background-image url('img/case_highschool.png')
+      
+  &__heading
+    position relative
+    padding-top 35px
+    font-weight 900
+    font-size 20px
+    line-height 26px
+    
+  &__divider
+    position relative
+    line-height 25px
+    color #ea6721
+    font-weight 900
+    
+    &:before
+      content '—'
+    
+  &__title
+    font-weight 300
+    color #134579
+    font-size 18px
+    line-height 26px
+    
+  &__sub-heading
+    text-transform uppercase
+    color #ea6721
+    font-size 16px
+    font-weight 900
+    line-height 26px

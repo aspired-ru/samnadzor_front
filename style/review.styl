@@ -1,0 +1,73 @@
+.review
+  position relative
+  padding-bottom 30px
+  text-align center
+  
+  &:before
+  &:after
+    background #fff
+    position absolute
+    display block
+    left 50%
+    z-index 100
+    content ''
+    
+  &:before
+    transform rotate(45deg)
+    border 1px solid #dfdfdf
+    width 42.50px
+    height 42.50px
+    bottom 9px
+    margin-left -20px
+    
+  &:after
+    margin-left -50px
+    width 100px
+    height 30px
+    bottom 31px
+  
+  &__inner
+    border 1px solid #dfdfdf
+    position relative
+    padding 120px
+    max-height 484px
+    overflow-y hidden
+    
+    &:before
+    &:after
+      background-position center center
+      background-repeat no-repeat
+      background-size contain
+      position absolute
+      display block
+      width 32px
+      height 19px
+      content ''
+      
+    &:before
+      background-image url('img/quote_open.png')
+      top 60px
+      left 60px
+      
+    &:after
+      background-image url('img/quote_close.png')
+      bottom 60px
+      right 60px
+      
+  &__heading
+    line-height 28px
+    font-size 20px
+    font-weight 700
+    color #134579
+    
+  &__sub-heading
+    color #ea6721
+    font-size 18px
+    line-height 28px
+    
+  &__text
+    font-size 28px
+    font-weight 300
+    line-height 40px
+    color #134579
+    margin 28px 0
